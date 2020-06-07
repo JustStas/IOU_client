@@ -8,13 +8,14 @@ import socket
 
 
 
-# print(server_conn('list_users', verbose=True))
+print(server_conn('list_users', verbose=True))
 
 #
+#
+# trx = Trx(creditor_id=0)
+# trx.equal_split([0,1,2])
+# #
+# #
+# core.balance_overview()
 
-trx = Trx(creditor_id=0)
-trx.equal_split([0,1,2])
-
-
-core.balance_overview()
-
+# server_conn('reset_databases')
