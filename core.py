@@ -4,6 +4,7 @@ from classes import Trx, IOU, User
 from connection import server_conn
 from paths import trx_log_path, users_db_path
 
+
 #
 # def create_dbs():
 #     trx_log = pd.DataFrame(columns=['trx_id', 'IOU_id', 'creditor_id', 'debtor_id', 'currency', 'amount', 'date'],
@@ -16,12 +17,16 @@ from paths import trx_log_path, users_db_path
 #     users_db.to_hdf(users_db_path, key='df')
 
 
-
-
-
-def balance_overview(user_ids=None):
-    if user_ids is None:
+def balance_overview(user_ids=-1):
+    if user_ids == -1:
         user_ids = []
+    elif isinstance(user_ids, list):
+        pass
+    elif isinstance(user_ids, int):
+        user_ids = [user_ids]
+    else:
+        print('Wrong input')
+        return
     users = server_conn('list_users')
     counterpart_ids = users.to_list()
     if not user_ids:
