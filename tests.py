@@ -2,6 +2,7 @@ import core
 from connection import server_conn
 import pandas as pd
 from classes import Trx, User
+from pprint import pprint as pp
 
 import socket
 
@@ -9,7 +10,7 @@ import socket
 
 #
 # print(max(server_conn('list_users')))
-# server_conn('reset_databases')
+server_conn('reset_databases', verbose=True)
 #
 #
 # i=0
@@ -36,4 +37,4 @@ import socket
 # user = User(user_id=9)
 # user.load()
 # user.describe(short=False)
-core.balance_overview([0,1])
+# core.balance_overview([0,1])

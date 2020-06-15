@@ -1,6 +1,7 @@
 import datetime
 from connection import server_conn
 
+
 class Trx:
     def __init__(self,
                  creditor_id,
@@ -20,7 +21,6 @@ class Trx:
         self.full_amount = full_amount
         self.date = date
 
-
     def save(self):
         server_conn('update_trx', {'trx_id': self.trx_id, 'trx_name': self.trx_name, 'creditor_id': self.creditor_id,
                                    'debtors_id': self.debtors_id, 'currency': self.currency, 'amount': self.full_amount,
@@ -38,7 +38,6 @@ class Trx:
 
         else:
             print('No transaction found with this ID')
-
 
     def describe(self):
         print('Transaction ID:', self.trx_id)
@@ -108,7 +107,7 @@ class User:
                 print('Leaving without user creation.')
 
             if y_n in ['y', 'Y']:
-                self.user_id = max(server_conn('list_users'))+1
+                self.user_id = max(server_conn('list_users')) + 1
                 self.f_name = input('Enter user first name: ')
                 self.l_name = input('Enter user last name: ')
                 self.write()
@@ -117,8 +116,9 @@ class User:
         user = {'user_id': self.user_id, 'f_name': self.f_name, 'l_name': self.l_name}
         self.user_id = server_conn('write_user', user)
 
-    def balance(self, counterpart_id=-1):  # todo currently I/O happens on every balance query - maybe, create attribute with all possible balances in case of slow I/O
-        if counterpart_id==-1:
+    def balance(self,
+                counterpart_id=-1):  # todo currently I/O happens on every balance query - maybe, create attribute with all possible balances in case of slow I/O
+        if counterpart_id == -1:
             user_pair = {'debtor_id': self.user_id, 'creditor_id': None}
             debt = server_conn('amount_check', user_pair)
             user_pair = {'debtor_id': None, 'creditor_id': self.user_id}
