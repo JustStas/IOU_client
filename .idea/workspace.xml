@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="defe5025-f726-4615-8f9d-30c65c51b16e" name="Default Changelist" comment="Multiple small updates">
-      <change afterPath="$PROJECT_DIR$/support_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/connection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +165,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591641484342</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Multiple small updates">
+      <created>1592246523795</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592246523795</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Multiple small updates">
+      <created>1592246581775</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592246581775</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,29 +199,29 @@
     <option name="LAST_COMMIT_MESSAGE" value="Multiple small updates" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="936" height="281" key="GridCell.Tab.0.bottom" timestamp="1591968134749">
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1592255368945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591968134749" />
-    <state width="936" height="281" key="GridCell.Tab.0.center" timestamp="1591968134749">
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592255368945" />
+    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1592255368945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591968134749" />
-    <state width="936" height="281" key="GridCell.Tab.0.left" timestamp="1591968134749">
+    <state width="1899" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592255368945" />
+    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1592255368945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591968134749" />
-    <state width="936" height="281" key="GridCell.Tab.0.right" timestamp="1591968134749">
+    <state width="1899" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592255368945" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1592255368945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591968134749" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592255368945" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1591537073153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1591537073153" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1591641486189">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1592246582760">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591641486189" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592246582760" />
   </component>
 </project>

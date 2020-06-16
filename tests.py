@@ -10,7 +10,7 @@ import socket
 
 #
 # print(max(server_conn('list_users')))
-server_conn('reset_databases', verbose=True)
+# server_conn('reset_databases', verbose=True)
 #
 #
 # i=0
@@ -38,3 +38,6 @@ server_conn('reset_databases', verbose=True)
 # user.load()
 # user.describe(short=False)
 # core.balance_overview([0,1])
+
+
+print(server_conn('list_ious'))
