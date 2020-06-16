@@ -3,6 +3,7 @@ from connection import server_conn
 import pandas as pd
 from classes import Trx, User
 from pprint import pprint as pp
+from forms import WindowUserOverview
 
 import socket
 
@@ -10,7 +11,6 @@ import socket
 
 #
 # print(max(server_conn('list_users')))
-server_conn('reset_databases', verbose=True)
 #
 #
 # i=0
@@ -38,3 +38,6 @@ server_conn('reset_databases', verbose=True)
 # user.load()
 # user.describe(short=False)
 # core.balance_overview([0,1])
+
+WindowUserOverview()
+# print(server_conn('list_trx'))

@@ -18,11 +18,18 @@ def server_conn(command, data_to_send=None, verbose=False):
     if verbose:
         print('Data sent')
 
-    data_received = client_sock.recv(1024)
+    data_received = []
+    while True:
+        packet = client_sock.recv(1024)
+        data_received.append(packet)
+        if not packet:
+            break
+
+
     if verbose:
         print('Data received')
     client_sock.close()
     if verbose:
         print('Socket closed')
-    data_unpickled = pickle.loads(data_received)
+    data_unpickled = pickle.loads(b"".join(data_received))
     return data_unpickled

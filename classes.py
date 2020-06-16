@@ -99,7 +99,7 @@ class User:
         self.telegram_id = telegram_id
         self.description = self.describe(short=False)
 
-    def load(self):
+    def load(self, offer_to_create=True):
         credentials = server_conn('check_user', self.username)
         if credentials is not None:
             self.user_id = credentials['user_id']
@@ -107,7 +107,8 @@ class User:
             self.l_name = credentials['l_name']
             self.telegram_id = credentials['telegram_id']
         else:
-            self.create_new_user()
+            if offer_to_create:
+                self.create_new_user()
 
         self.description = self.describe(short=False)
 
