@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="defe5025-f726-4615-8f9d-30c65c51b16e" name="Default Changelist" comment="Multiple small updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/connection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592246581775</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Multiple small updates">
+      <created>1592338087357</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592338087357</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,29 +205,29 @@
     <option name="LAST_COMMIT_MESSAGE" value="Multiple small updates" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1592255368945">
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1592338150150">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592255368945" />
-    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1592255368945">
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592338150150" />
+    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1592338150149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592255368945" />
-    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1592255368945">
+    <state width="1899" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592338150149" />
+    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1592338150149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592255368945" />
-    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1592255368945">
+    <state width="1899" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592338150149" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1592338150149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592255368945" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592338150149" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1591537073153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1591537073153" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1592246582760">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1592338088896">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592246582760" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592338088896" />
   </component>
 </project>

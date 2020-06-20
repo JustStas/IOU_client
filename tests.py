@@ -3,6 +3,7 @@ from connection import server_conn
 import pandas as pd
 from classes import Trx, User
 from pprint import pprint as pp
+from forms import WindowUserOverview
 
 import socket
 
@@ -40,4 +41,5 @@ import socket
 # core.balance_overview([0,1])
 
 
-print(server_conn('list_ious'))
+# print(server_conn('list_ious'))
+WindowUserOverview()
