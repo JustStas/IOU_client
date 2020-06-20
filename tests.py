@@ -3,7 +3,8 @@ from connection import server_conn
 import pandas as pd
 from classes import Trx, User
 from pprint import pprint as pp
-from forms import WindowUserOverview
+from forms import WindowUserOverview, NewTRX
+from paths import users_db_path
 
 import socket
 
@@ -22,7 +23,9 @@ import socket
 # #
 # #
 
-
+#def print_users():
+#    users = pd.read_hdf(users_db_path, key='df')
+#    print(users)
 
 # # trx.describe()
 # user_pair = {'debtor_id': 0, 'creditor_id': 1}
@@ -38,6 +41,7 @@ import socket
 # user.load()
 # user.describe(short=False)
 # core.balance_overview([0,1])
-
+#print_users()
 WindowUserOverview()
+# NewTRX()
 # print(server_conn('list_trx'))

@@ -4,14 +4,14 @@ from tkinter import messagebox
 global f_name_out_label, l_name_out_label, debt_out_label, receivables_out_label
 
 
-class WindowUserOverview: # todo check why text displays incorrectly after multiple pushes of the Load button
+class WindowUserOverview:
     def __init__(self):
         # Creating windows
         self.user_overview = tk.Tk()
 
         # Creating and placing elements
         # labels
-        self.username_label = tk.Label(self.user_overview, text='User ID:')
+        self.username_label = tk.Label(self.user_overview, text='Usename:')
         self.username_label.grid(row=0, column=0, pady=10)
 
         self.f_name_label = tk.Label(self.user_overview, text='First name:')
@@ -45,12 +45,23 @@ class WindowUserOverview: # todo check why text displays incorrectly after multi
 
         if user.user_id == -1:
             messagebox.showwarning('Error', 'User not found')
-            f_name_out_label.destroy()
-            l_name_out_label.destroy()
-            debt_out_label.destroy()
-            receivables_out_label.destroy()
+            try:
+                f_name_out_label.destroy()
+                l_name_out_label.destroy()
+                debt_out_label.destroy()
+                receivables_out_label.destroy()
+            except NameError:
+                pass
 
         else:
+            try:
+                f_name_out_label.destroy()
+                l_name_out_label.destroy()
+                debt_out_label.destroy()
+                receivables_out_label.destroy()
+            except NameError:
+                pass
+
             f_name_out_label = tk.Label(self.user_overview, text=user.f_name)
             f_name_out_label.grid(row=2, column=1)
 
@@ -66,3 +77,43 @@ class WindowUserOverview: # todo check why text displays incorrectly after multi
             receivables_out_label.grid(row=5, column=1)
 
 
+class NewTRX:
+    def __init__(self):
+        # creating main window
+        self.insert_trx_window = tk.Tk()
+
+        # creating frames
+        self.input_frame = tk.LabelFrame(self.insert_trx_window, padx=5, pady=3)
+        self.input_frame.grid(row=0,column=0)
+
+        self.button_frame = tk.LabelFrame(self.insert_trx_window, padx=5, pady=5)
+        self.button_frame.grid(row=2, column=1)
+
+        # Creating and placing elements
+        # labels
+        self.name_label = tk.Label(self.input_frame, text='Name')
+        self.name_label.grid(row=0, column=0, padx=5, pady=5)
+
+        self.date_label = tk.Label(self.input_frame, text='Date')
+        self.date_label.grid(row=1, column=0, padx=5, pady=5)
+
+        self.volume_label = tk.Label(self.input_frame, text='Volume')
+        self.volume_label.grid(row=2, column=0, padx=5, pady=5)
+
+        self.creditor_label = tk.Label(self.input_frame, text='Creditor')
+        self.creditor_label.grid(row=3, column=0, padx=5, pady=5)
+
+        # entry
+        self.name_entry = tk.Entry(self.input_frame)
+        self.name_entry.grid(row=0, column=1)
+
+        self.date_entry = tk.Entry(self.input_frame)
+        self.date_entry.grid(row=1, column=1)
+
+        self.volume_entry = tk.Entry(self.input_frame)
+        self.volume_entry.grid(row=2, column=1)
+
+        self.creditor_entry = tk.Entry(self.input_frame)
+        self.creditor_entry.grid(row=3, column=1)
+
+        self.insert_trx_window.mainloop()
